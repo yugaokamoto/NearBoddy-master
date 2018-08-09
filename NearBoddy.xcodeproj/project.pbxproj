@@ -60,6 +60,9 @@
 		927B459921141D6A008DE0E5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 927B459821141D69008DE0E5 /* GoogleService-Info.plist */; };
 		927B459C2116CABF008DE0E5 /* MailCertificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927B459B2116CABE008DE0E5 /* MailCertificationViewController.swift */; };
 		927B459E21171852008DE0E5 /* SendEmailVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927B459D21171851008DE0E5 /* SendEmailVerificationViewController.swift */; };
+		9291B5122118197800D632AF /* PasswordResetEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9291B5112118197800D632AF /* PasswordResetEmailViewController.swift */; };
+		9291B514211A8DA400D632AF /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9291B513211A8DA400D632AF /* WalkthroughViewController.swift */; };
+		9291B516211A907900D632AF /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9291B515211A907900D632AF /* WalkthroughPageViewController.swift */; };
 		C4C88D3582AD226375AB5D29 /* Pods_NearBoddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7E4E36E58D0D2944C187B2 /* Pods_NearBoddy.framework */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +126,11 @@
 		927B459A21141F03008DE0E5 /* NearBoddy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NearBoddy.entitlements; sourceTree = "<group>"; };
 		927B459B2116CABE008DE0E5 /* MailCertificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailCertificationViewController.swift; sourceTree = "<group>"; };
 		927B459D21171851008DE0E5 /* SendEmailVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendEmailVerificationViewController.swift; sourceTree = "<group>"; };
+		9291B50F2117EECF00D632AF /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Start.strings; sourceTree = "<group>"; };
+		9291B5102117EED000D632AF /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9291B5112118197800D632AF /* PasswordResetEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetEmailViewController.swift; sourceTree = "<group>"; };
+		9291B513211A8DA400D632AF /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
+		9291B515211A907900D632AF /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,9 +247,12 @@
 		927669AB20FAFE4600F60297 /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				9291B513211A8DA400D632AF /* WalkthroughViewController.swift */,
+				9291B515211A907900D632AF /* WalkthroughPageViewController.swift */,
 				9276698C20FAE37A00F60297 /* SignInViewController.swift */,
 				9276698E20FAE38F00F60297 /* SignUpViewController.swift */,
 				927B459B2116CABE008DE0E5 /* MailCertificationViewController.swift */,
+				9291B5112118197800D632AF /* PasswordResetEmailViewController.swift */,
 				927B459D21171851008DE0E5 /* SendEmailVerificationViewController.swift */,
 				9276699020FAE3AA00F60297 /* HomeViewController.swift */,
 				927B4577210C05C6008DE0E5 /* PostVCs */,
@@ -337,7 +348,6 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = 9276696E20FA547B00F60297;
@@ -446,6 +456,7 @@
 				927669B420FB700000F60297 /* RoomsViewController.swift in Sources */,
 				927B459C2116CABF008DE0E5 /* MailCertificationViewController.swift in Sources */,
 				927B4587210FE491008DE0E5 /* MyPostsViewController.swift in Sources */,
+				9291B514211A8DA400D632AF /* WalkthroughViewController.swift in Sources */,
 				9276699B20FAE7F700F60297 /* AuthService.swift in Sources */,
 				927B4583210F31E0008DE0E5 /* FollowApi.swift in Sources */,
 				921E73542109FC88007E86DD /* MessageApi.swift in Sources */,
@@ -462,9 +473,11 @@
 				921E734F2109F70C007E86DD /* MessageModel.swift in Sources */,
 				921E73472108C9FD007E86DD /* HomeTableViewCell.swift in Sources */,
 				921E733321073E83007E86DD /* Api.swift in Sources */,
+				9291B516211A907900D632AF /* WalkthroughPageViewController.swift in Sources */,
 				9276699320FAE3DC00F60297 /* PostViewController.swift in Sources */,
 				927B457D210F28D6008DE0E5 /* PeopleTableViewCell.swift in Sources */,
 				921E7341210880EF007E86DD /* UserModel.swift in Sources */,
+				9291B5122118197800D632AF /* PasswordResetEmailViewController.swift in Sources */,
 				927B458E21104E4C008DE0E5 /* Notification.swift in Sources */,
 				921E733821074700007E86DD /* HelperService.swift in Sources */,
 				927B458B210FE4B8008DE0E5 /* FollowerViewController.swift in Sources */,
@@ -479,6 +492,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9276697F20FA547C00F60297 /* Base */,
+				9291B50F2117EECF00D632AF /* ja */,
 			);
 			name = Start.storyboard;
 			sourceTree = "<group>";
@@ -487,6 +501,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9276698420FA547F00F60297 /* Base */,
+				9291B5102117EED000D632AF /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -498,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -558,6 +574,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

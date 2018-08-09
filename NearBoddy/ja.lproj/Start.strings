@@ -1,0 +1,72 @@
+
+/* Class = "UILabel"; text = "*メール確認リンクをタップ後、画面が遷移しない場合こちらをタップしてください。"; ObjectID = "3MK-hb-7mL"; */
+"3MK-hb-7mL.text" = "*メール確認リンクをタップ後、画面が遷移しない場合こちらをタップしてください。";
+
+/* Class = "UIButton"; normalTitle = "パスワードログイン画面に戻る"; ObjectID = "3f2-j6-Est"; */
+"3f2-j6-Est.normalTitle" = "パスワードログイン画面に戻る";
+
+/* Class = "UILabel"; text = "NearBuddy"; ObjectID = "5r0-ei-LEo"; */
+"5r0-ei-LEo.text" = "NearBuddy";
+
+/* Class = "UITextField"; placeholder = "パスワードを入力"; ObjectID = "7ZJ-ua-FWZ"; */
+"7ZJ-ua-FWZ.placeholder" = "パスワードを入力";
+
+/* Class = "UIButton"; normalTitle = "アカウント作成"; ObjectID = "9SQ-bW-EQv"; */
+"9SQ-bW-EQv.normalTitle" = "アカウント作成";
+
+/* Class = "UIButton"; normalTitle = "パスワードリセットメールを送信"; ObjectID = "F5M-yt-Xdz"; */
+"F5M-yt-Xdz.normalTitle" = "パスワードリセットメールを送信";
+
+/* Class = "UILabel"; text = "必ず"; ObjectID = "IWL-X5-xB1"; */
+"IWL-X5-xB1.text" = "必ず";
+
+/* Class = "UIButton"; normalTitle = "パスワードをお忘れですか？"; ObjectID = "NAK-hA-dcc"; */
+"NAK-hA-dcc.normalTitle" = "パスワードをお忘れですか？";
+
+/* Class = "UITextField"; placeholder = "メールアドレスを入力"; ObjectID = "ScA-eK-ktr"; */
+"ScA-eK-ktr.placeholder" = "メールアドレスを入力";
+
+/* Class = "UITextField"; placeholder = "ユーザー名を入力"; ObjectID = "Wyf-6q-KPB"; */
+"Wyf-6q-KPB.placeholder" = "ユーザー名を入力";
+
+/* Class = "UILabel"; text = "ご指定して頂いたメールアドレスにパスワードリセットメールを送信いたしました。アプリを終了し、"; ObjectID = "YHU-Fm-eaf"; */
+"YHU-Fm-eaf.text" = "ご指定して頂いたメールアドレスにパスワードリセットメールを送信いたしました。アプリを終了し、";
+
+/* Class = "UIButton"; normalTitle = "既にアカウントをお持ちですか？"; ObjectID = "Yd0-sF-jVj"; */
+"Yd0-sF-jVj.normalTitle" = "既にアカウントをお持ちですか？";
+
+/* Class = "UITextField"; placeholder = "メールアドレスを入力"; ObjectID = "aMc-Gf-zmo"; */
+"aMc-Gf-zmo.placeholder" = "メールアドレスを入力";
+
+/* Class = "UILabel"; text = "お使いのスマートフォンデバイスから届いたメールリンクをタップして認証を完了してください。"; ObjectID = "ahf-R3-Naj"; */
+"ahf-R3-Naj.text" = "お使いのスマートフォンデバイスから届いたメールリンクをタップして認証を完了してください。";
+
+/* Class = "UILabel"; text = "*PC・タブレット端末からのログインには対応しておりません。ご注意ください。"; ObjectID = "bcS-Zv-42w"; */
+"bcS-Zv-42w.text" = "*PC・タブレット端末からのログインには対応しておりません。ご注意ください。";
+
+/* Class = "UILabel"; text = "*PC・タブレット端末からのログインには対応しておりません。ご注意ください。"; ObjectID = "cO1-Wz-YrY"; */
+"cO1-Wz-YrY.text" = "*PC・タブレット端末からのログインには対応しておりません。ご注意ください。";
+
+/* Class = "UILabel"; text = "お使いのスマートフォンデバイスから届いたメールリンクをタップしてパスワードの変更を完了してください。"; ObjectID = "ele-Zy-7yZ"; */
+"ele-Zy-7yZ.text" = "お使いのスマートフォンデバイスから届いたメールリンクをタップしてパスワードの変更を完了してください。";
+
+/* Class = "UIButton"; normalTitle = "ログイン"; ObjectID = "hj6-HT-sQV"; */
+"hj6-HT-sQV.normalTitle" = "ログイン";
+
+/* Class = "UITextField"; placeholder = "パスワードを入力"; ObjectID = "hwV-uo-cJR"; */
+"hwV-uo-cJR.placeholder" = "パスワードを入力";
+
+/* Class = "UILabel"; text = "NearBuddy"; ObjectID = "jyB-OG-pse"; */
+"jyB-OG-pse.text" = "NearBuddy";
+
+/* Class = "UITextField"; placeholder = "メールアドレスを入力"; ObjectID = "lCT-bF-efA"; */
+"lCT-bF-efA.placeholder" = "メールアドレスを入力";
+
+/* Class = "UILabel"; text = "ご指定して頂いたメールアドレスにメールアドレス確認のメールを送信いたしました。アプリを終了し、"; ObjectID = "sNq-ta-zEa"; */
+"sNq-ta-zEa.text" = "ご指定して頂いたメールアドレスにメールアドレス確認のメールを送信いたしました。アプリを終了し、";
+
+/* Class = "UILabel"; text = "必ず"; ObjectID = "w3t-3t-8K2"; */
+"w3t-3t-8K2.text" = "必ず";
+
+/* Class = "UIButton"; normalTitle = "まだアカウントをお持ちでないですか？"; ObjectID = "xvf-Ql-RgY"; */
+"xvf-Ql-RgY.normalTitle" = "まだアカウントをお持ちでないですか？";

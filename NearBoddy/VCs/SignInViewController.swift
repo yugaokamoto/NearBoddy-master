@@ -25,25 +25,19 @@ class SignInViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-//        if let link = UserDefaults.standard.value(forKey: "Link") as? String {
-//            self.Link = link
-//        }
+       
+        let defalts = UserDefaults.standard
+        let hasViewedWalkthrough = defalts.bool(forKey: "hasViewedWalkthrough")
+        if hasViewedWalkthrough != true{
+            if let pageVC = storyboard?.instantiateViewController(withIdentifier: "WalkthroughPageViewController") as? WalkthroughPageViewController{
+                present(pageVC, animated: true, completion: nil)
+            }
+        }
         
         if let password = UserDefaults.standard.value(forKey: "Password") as? String {
             self.Password = password
         }
-//        print("Link2: \(self.Link)")
         print("Password2: \(self.Password)")
-        
-//        if Link == nil{
-//
-//        }else{
-
-//            if Auth.auth().isSignIn(withEmailLink: Link!) {
-//                performSegue(withIdentifier: "signInToTabBar", sender: nil)
-//            }
-//        }
-        
         if Password != nil{
             performSegue(withIdentifier: "signInToTabBar", sender: nil)
         }
@@ -71,9 +65,9 @@ class SignInViewController: UIViewController {
     
     @IBAction func signIn_touchUpInside(_ sender: Any) {
         view.endEditing(true)
-        ProgressHUD.show("Wating for...", interaction: false)
+        ProgressHUD.show("ログインしています...", interaction: false)
         AuthService.signIn(email: emailTextField.text!, password: passwordTextField.text!, onSuccess:{
-            ProgressHUD.showSuccess("Success")
+            ProgressHUD.showSuccess("ログインに成功しました！")
             self.performSegue(withIdentifier: "signInToTabBar", sender: nil)
         }, onError:{error in
             ProgressHUD.showError(error!)

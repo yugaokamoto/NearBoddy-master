@@ -86,7 +86,7 @@ class SignUpViewController: UIViewController {
     
     @IBAction func signUp_touchUpInside(_ sender: Any) {
         view.endEditing(true)
-        ProgressHUD.show("Wating for...", interaction: false)
+        ProgressHUD.show("ユーザーを作成しています...", interaction: false)
         if let profileImage = self.selectedImage, let imageData = UIImageJPEGRepresentation(profileImage, 0.1){
             let imageData2 = UIImageJPEGRepresentation(UIImage(named: "Placeholder-image")!, 0.1)
             AuthService.signUp(username: usernameTextField.text!, email: emailTextField.text!, password: passwordTextField.text!, imageData: imageData,imageData2: imageData2!, onSuccess: {

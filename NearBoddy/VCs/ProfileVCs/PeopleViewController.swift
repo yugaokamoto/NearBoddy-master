@@ -10,25 +10,50 @@ import UIKit
 
 class PeopleViewController: UIViewController {
 
+    var searchBar = UISearchBar()
     @IBOutlet weak var tableView: UITableView!
     var users : [UserModel] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-        tableView.estimatedRowHeight = 77
-        loadUser()
+        searchBar.delegate = self
+        searchBar.searchBarStyle = .minimal
+        searchBar.placeholder = "Search"
+        searchBar.frame.size.width = view.frame.size.width - 60
+        doSearch()
+        let searchItem = UIBarButtonItem(customView: searchBar)
+        self.navigationItem.rightBarButtonItem = searchItem
+//        loadUser()
     }
     
-    func loadUser(){
-        Api.User.observeUsers { (user) in
-            self.isFollowing(userId:user.id!, completed: {
-                value in
-                user.isFollowing = value
-                self.users.append(user)
-                self.tableView.reloadData()
-            })
+//    func loadUser(){
+//        Api.User.observeUsers { (user) in
+//            self.isFollowing(userId:user.id!, completed: {
+//                value in
+//                user.isFollowing = value
+//                self.users.append(user)
+//                self.tableView.reloadData()
+//            })
+//        }
+//    }
+    
+    func doSearch(){
+        if let searchText = searchBar.text?.lowercased(){
+            self.users.removeAll()
+            self.tableView.reloadData()
+            Api.User.queryUser(withText: searchText) { (user) in
+                self.isFollowing(userId:user.id!, completed: {
+                    value in
+                    user.isFollowing = value
+                    self.users.append(user)
+                    self.tableView.reloadData()
+                })
+                
+            }
         }
     }
+    
+    
     
     func isFollowing(userId:String,completed: @escaping (Bool) -> Void){
         Api.Follow.isFollowing(userId: userId, completed: completed)
@@ -41,6 +66,17 @@ class PeopleViewController: UIViewController {
             profileUserVC.userId = userId
             profileUserVC.delegate = self
         }
+    }
+    
+}
+
+extension PeopleViewController: UISearchBarDelegate{
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        doSearch()
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        doSearch()
     }
     
 }

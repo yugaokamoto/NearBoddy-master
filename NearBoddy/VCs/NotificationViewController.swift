@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import ProgressHUD
 class NotificationViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
@@ -38,6 +39,13 @@ class NotificationViewController: UIViewController {
         guard let currentUser = Auth.auth().currentUser else {
             return
         }
+        ProgressHUD.show("読み込んでいます。")
+            Api.Notification.REF_NOTIFICATION.child(currentUser.uid).observe(.value, with: { (snapshot) in
+                if !snapshot.exists() {
+                    ProgressHUD.showSuccess("まだ通知はありません")
+                }
+            })
+        
         Api.Notification.observeNotification(withId: currentUser.uid , completion: {
             notification in
             guard let uid = notification.from else {
@@ -48,6 +56,7 @@ class NotificationViewController: UIViewController {
                 print("notification: \(notification)")
                 self.tableView.reloadData()
             })
+          ProgressHUD.dismiss()
         })
     }
     

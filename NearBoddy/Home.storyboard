@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--全暇人の現在地-->
+        <!--暇人を探す-->
         <scene sceneID="9dX-kw-sL7">
             <objects>
                 <viewController id="LiU-zM-G5y" customClass="HomeViewController" customModule="NearBoddy" customModuleProvider="target" sceneMemberID="viewController">
@@ -116,13 +116,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mr0-8T-gsa"/>
                     </view>
-                    <navigationItem key="navigationItem" title="全暇人の現在地" id="Usg-qr-HqR">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="h8X-4B-0eX">
-                            <connections>
-                                <action selector="logOut_touchUpInside:" destination="LiU-zM-G5y" id="6CU-Ax-9dm"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="暇人を探す" id="Usg-qr-HqR"/>
                     <connections>
                         <outlet property="tableView" destination="T9n-H9-5by" id="BO9-6d-R8C"/>
                         <segue destination="wQ6-cc-5Id" kind="show" identifier="ProfileUserSegue" id="AuM-rz-9ny"/>
